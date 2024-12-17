@@ -18,6 +18,9 @@ elif opperation == "-":
 elif opperation == "*":
     print(f"Result is: {num1 * num2}")
 elif opperation == "/":
-    print(f"Result is: {num1 / num2}")
+    if num2 == 0:  
+        print("Cannot divide by zero")
+    else:
+        print(f"Result is: {num1 / num2}")
 else:
     print("invalid operation")
